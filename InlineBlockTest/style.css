@@ -1,0 +1,84 @@
+/* Conteneur de la grille */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes de largeur égale */
+    grid-gap: 10px; /* Espace entre les tuiles */
+    padding: 20px;
+    background-color: #001f7f;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Titre principal */
+h1 {
+    grid-column: span 3; /* Le titre prend toute la largeur */
+    margin-bottom: 20px;
+}
+
+/* Style de base pour les tuiles */
+.tile {
+    background-color: #1E90FF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Tuiles plus petites pour "Jeux de cartes" et "Mes musiques" */
+.tile.small {
+    grid-column: span 1; /* Chaque petite tuile prend 1 colonne */
+}
+
+/* Tuile pleine largeur pour l'image en bas */
+.tile.full {
+    grid-column: span 3; /* Prend toute la largeur */
+}
+
+/* Différentes couleurs pour les tuiles */
+.blue {
+    background-color: #3498db;
+}
+
+.purple {
+    background-color: #8e44ad;
+}
+
+.orange {
+    background-color: #e67e22;
+}
+
+.yellow {
+    background-color: #f1c40f;
+}
+
+/* Icônes dans les petites tuiles */
+.icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* Notification dans un cercle */
+.notification {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 0.8em;
+}
+
+/* Température dans la tuile météo */
+.weather {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 2em;
+}

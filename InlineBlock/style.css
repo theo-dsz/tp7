@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #12028b;
+    color: white;
+}
+
+.container {
+    padding: 20px;
+}
+
+.header {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    color: white;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.tile {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.blue {
+    background-color: #1E90FF;
+}
+
+.purple {
+    background-color: #6A5ACD;
+}
+
+.red {
+    background-color: #FF4500;
+}
+
+.orange {
+    background-color: #FFA500;
+}
+
+.large {
+    grid-column: span 3;
+    background-color: #222;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.notification, .temperature {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #FFF;
+    color: #000;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.temperature {
+    background-color: transparent;
+    color: white;
+    font-size: 1.5em;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
